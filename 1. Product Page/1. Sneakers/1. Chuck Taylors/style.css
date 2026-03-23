@@ -9,6 +9,12 @@ body {
   line-height: 1.4;
 }
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /* PRODUCT */
 
 .product-img {
@@ -31,15 +37,10 @@ body {
   padding: 15px;
 }
 
-.product-details {
-  width: 243px;
-  float: left;
-}
-
 /* PRODUCT INFORMATION */
 
 .product-info {
-  width: 243px;
+  width: 200px;
   float: left;
   margin-right: 40px;
   padding-top: 20px;
@@ -47,6 +48,7 @@ body {
 
 .product-description {
   clear: both;
+  margin-bottom: 10px;
 }
 
 .price {
@@ -61,6 +63,21 @@ body {
   color: #777;
   margin-bottom: 20px;
   float: right;
+  margin-top: 8px;
+}
+
+.left-sale {
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 7px 15px;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -35px;
 }
 
 .more-info:link,
@@ -75,12 +92,16 @@ body {
   text-decoration: none;
 }
 
+.colors {
+  font-size: 0;
+}
+
 .color {
   background-color: #000;
   height: 22px;
   width: 22px;
   display: inline-block;
-  margin-right: 12px;
+  margin-right: 8px;
 }
 
 .color-blue {
@@ -104,11 +125,17 @@ body {
 
 /* PRODUCT DETAILS */
 
+.product-details {
+  width: 187px;
+  float: left;
+  padding-top: 20px;
+}
+
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 15px;
-  margin-top: 30px;
+  margin-top: 0;
 }
 
 .details-list {
@@ -137,18 +164,4 @@ body {
 .add-cart:hover {
   color: black;
   background-color: white;
-}
-
-.left-sale {
-  background-color: #ec2f2f;
-  color: #fff;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
-  padding: 7px 15px;
-  display: inline-block;
-  position: absolute;
-  top: -17px;
-  left: -35px;
 }
